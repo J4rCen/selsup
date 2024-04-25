@@ -24,6 +24,10 @@ const params: Param[] = [
     {
         id: 2,
         name: "Длина"
+    },
+    {
+        id: 3,
+        name: "Ширина"
     }
 ]
 
@@ -35,6 +39,10 @@ const model: Model = {
         },
         {
             paramId: 2,
+            value:  "Макси"
+        },
+        {
+            paramId: 3,
             value:  "Макси"
         }
     ]
@@ -62,7 +70,7 @@ export default function ModelEditor() {
     function setValue(formDate: any) {
         for(const el of model.paramValues) {
             if(el.value !== formDate.get(el.paramId)) {
-                model.paramValues[el.paramId -1] = {
+                model.paramValues[el.paramId - 1] = {
                     paramId: el.paramId,
                     value: formDate.get(el.paramId)
                 }
