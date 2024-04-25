@@ -1,0 +1,14 @@
+.ModelEditor {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.ModelEditor__params {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
